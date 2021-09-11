@@ -1,0 +1,24 @@
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face{
+    font-family:ABC Monument Grotesk;
+    src:url(../../fonts/MonumentGrotesk-Regular.woff2) 
+    format("woff2"),
+    url(../../fonts/MonumentGrotesk-Regular.woff) 
+    format("woff");
+    font-display:block;
+    font-weight:400;
+    font-style:normal
+}
+    
+@font-face{font-family:ABC Monument Grotesk;
+    src:url(../../fonts/MonumentGrotesk-Mono.woff2) 
+    format("woff2"),
+    url(../../fonts/MonumentGrotesk-Mono.woff) 
+    format("woff");
+    font-display:block;
+    font-weight:300;
+    font-style:normal
+}
+

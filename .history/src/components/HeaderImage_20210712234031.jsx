@@ -1,0 +1,56 @@
+/** @jsxImportSource @emotion/react */
+
+import React from "react";
+import tw, { css } from "twin.macro";
+import Grid from "./styles/Grid.jsx";
+
+const HeaderImage = ({ backgroundImage, title }) => (
+  <div
+    css={[
+      css`
+        background-image: url(${backgroundImage});
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        background-size: cover;
+
+        :before {
+          content: "";
+          background-color: #e2e8f0;
+          position: absolute;
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+          opacity: 0.8;
+        }
+      `,
+      tw`h-96 relative pt-0 md:pt-0`,
+    ]}
+  >
+    <Grid node="header">
+      <div
+        css={[
+          css`
+            padding-top: 200px;
+            padding-bottom: 150px;
+          `,
+          tw`col-span-10 md:col-span-7 md:col-start-4 relative flex pl-1 md:pl-0`,
+        ]}
+      >
+        <span
+          css={css`
+            z-index: 1;
+            color: #71717a;
+            font-size: 54px;
+            font-weight: 700;
+            line-height: 54px;
+          `}
+        >
+          {title}
+        </span>
+      </div>
+    </Grid>
+  </div>
+);
+
+export default HeaderImage;
